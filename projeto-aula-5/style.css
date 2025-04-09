@@ -129,7 +129,7 @@ display: flex;
     font-size: 20px;
 }
 
-/* Responsividade */
+/* Responsividade Celular */
 @media (max-width: 767px) {
 .container{
     flex-direction: column;
@@ -161,7 +161,7 @@ display: flex;
         
     }
 }
-
+ /* Responsividade Tablet */
 @media (max-width: 1023px) {
     .container .direita .opcoes{
         width: 50%;
