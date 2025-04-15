@@ -1,7 +1,7 @@
 const nome = "Davi" // texto - string
 const idade = 29    // número - number
-const altura = 1.80 // número - number  não tem virgula apenas ponto apenas javascript
-//  - outras linguagens tipo floots
+const altura = 1.80 // número - number  não tem virgula, apenas ponto apenas javascript
+//  - outras linguagens tem -  tipo floots
 const maiorDeIdade = true // booleano - boolean - verdadeiro ou falso
 console.log("Olá seu nome é " + nome) // concatenação
 // olá seu nome é Davi, voçê tem 29 anos e sua altura é 1.80
