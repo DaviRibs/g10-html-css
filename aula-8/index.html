@@ -1,77 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script src="./script.js"></script>
     <title>Document</title>
-  </head>
-  <body>
-    <div
-      class="w-full h-screen flex flex-col items-center pt-[20px] bg-[#E5E5E5FF]"
-    >
-      <h1 class="text-[30px] text-[#355bd7ff] font-bold">
-        Calculadora de Aluguel de carros
-      </h1>
-      <p>
-        Calcule facilmente o valor da diaria do seu carro alugado com base nos
-        dias e quilômetros rodados.
-      </p>
-      <div class="w-[400px] h-auto bg-white mt-[30px] rounded-[10px]">
-        <div class="w-full h-[10%] flex justify-center items-center">
-          <h1 class="text-[20px] font-bold">Calculadora de Diária</h1>
-        </div>
-        <div class="w-full h-[90%] p-[10px] flex flex-col">
-          <label for="dia" class="font-bold">Dias de Aluguel</label>
-          <input
-            type="number"
-            id="dia"
-            class="w-full rounded-[5px] border border-[#cccccc]"
-          />
-          <label for="km" class="font-bold mt-2">Quilômetros rodados</label>
-          <input
-            type="number"
-            id="km"
-            class="w-full rounded-[5px] border border-[#cccccc]"
-          />
-          <label for="categoria" class="font-bold mt-2">Tipo de Veículo</label>
-          <select
-            id="categoria"
-            class="w-full rounded-[5px] border border-[#cccccc]"
-          >
-            <option value="economico">Economico</option>
-            <option value="intermediario">intermediario</option>
-            <option value="luxo">Luxo</option>
-          </select>
-          <button id= "Calcular" class="p-2 rounded-md bg-black text-white mt-4">
-            Calcular
-          </button>
-          <div class="w-full bg-gray-300 mt-4 rounded-lg p-2">
-            <h4 class="font-bold text-[18px]">Resultado</h4>
-            <div class="w-full flex justify-between">
-              <p>Valor da diaria:</p>
-              <p id="result-diaria"></p>
+</head>
+<body>  
+   <div class="w-full h-screen flex flex-col items-center pt-[20px] bg-[#E5E5E5FF]">
+        <h1 class="text-[30px] text-[#355BD7FF] font-bold">Calculadora aluguel de carros</h1>
+        <p>Calcule facilmente o valor da diária do seu carro alugado com base nos dias e quilômetros rodados.</p>
+        <div class="w-[400px] h-auto bg-white mt-[30px] rounded-[10px]">
+            <div class="w-full h-[10%] flex justify-center items-center">
+                <h1 class="text-[20px] font-bold">Calculadora de Diária</h1>
             </div>
-            <div class="w-full flex justify-between">
-              <p>Custo das diárias <span id="total-dias"></span>:</p>
-              <p id="result-total-dias"></p>
+            <div class="w-full h-[90%] p-[10px] flex flex-col">
+                <label for="dia" class="font-bold">Dias de Aluguel</label>
+                <input type="number" id="dia" class="w-full rounded-[5px] border border-[#cccccc]">
+                <label for="km" class="font-bold mt-2">Quilômetros rodados</label>
+                <input type="number" id="km" class="w-full rounded-[5px] border border-[#cccccc]">
+                <label for="categoria" class="font-bold mt-2">Tipo de Veículo</label>
+                <select id="categoria" class="w-full rounded-[5px] border border-[#cccccc]">
+                    <option value="economico">Econômico</option>
+                    <option value="intermediario">Intermediário</option>
+                    <option value="luxo">Luxo</option>
+                </select>
+                <button id="calcular" class=w-full p-2 rounded-md bg-black text-white mt-4">
+                    Calcular
+                </button>
+                <div class="w-full bg-gray-300 rounded-lg mt-4 p-2">
+                    <h4 class="font-bold text-[18px]">Resultado</h4>
+                    <div class="w-full flex justify-between">
+                        <p>Valor da diária:</p>
+                        <p id="result-diaria"></p>
+                    </div>
+                    <div class="w-full flex justify-between">
+                        <p>Custo das diárias <span id="total-dias"></span></p>
+                    </div>
+                </div>
             </div>
-            <div class="w-full flex justify-between">
-                <p>Valor por km:</p>
-                <p id="result-total-km"></p>
-              </div>
-              <div class="w-full flex justify-between">
-                <p>Custo por km <span id="total-kms"></span>:</p>
-                <p id="result-total-kms"></p>
-              </div>
-              <div class="w-full flex justify-between border-t border-gray-400">
-                <p class="font-bold">Valor Total:</p>
-                <p id="result-total"></p>
-              </div>
-          </div>
         </div>
-      </div>
     </div>
-  </body>
+</body>
 </html>
